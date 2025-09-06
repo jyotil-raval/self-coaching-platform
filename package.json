@@ -1,0 +1,22 @@
+{
+    "name": "@self-coaching/root",
+    "version": "0.1.0",
+    "private": true,
+    "packageManager": "pnpm@8.10.0",
+    "scripts": {
+        "dev": "turbo run dev",
+        "build": "turbo run build",
+        "lint": "turbo run lint",
+        "test": "turbo run test",
+        "format": "prettier --write .",
+        "install:all": "pnpm install -r",
+        "clean:all": "pnpm exec rimraf node_modules pnpm-lock.yaml **/node_modules **/pnpm-lock.yaml"
+    },
+    "devDependencies": {
+        "eslint": "^9.35.0",
+        "prettier": "^3.3.3",
+        "rimraf": "^6.0.1",
+        "turbo": "^2.5.6",
+        "typescript": "^5.6.3"
+    }
+}
